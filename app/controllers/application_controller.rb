@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
 	protect_from_forgery with: :null_session
 
 	before_filter :allow_cors
-  #after_filter :allow_cors
 
 	def allow_cors
 	  headers["Access-Control-Allow-Origin"] = "*"
